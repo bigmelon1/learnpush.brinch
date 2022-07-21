@@ -6,7 +6,13 @@
 body {
   margin: 0;
 }
-  
+
+
+
+
+.all_navbar{
+  display: flex;
+}
   
   
 .main_intro-head{
@@ -22,6 +28,9 @@ body {
   font-size: 40px; 
   margin: 0;
 }
+
+
+
 
 .main_linkbox {
   width: 400px;
