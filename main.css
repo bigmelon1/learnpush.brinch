@@ -12,9 +12,35 @@ body {
 
 .all_navbar{
   display: flex;
+  height: 100px;
 }
+
+.all_navbar-logo{
+  width: 150px;
+  height: 100%;
+  border-width: 0px 1px 0px 0px;
+  border-style: solid;
+  text-align: center;
+}
+.all_navbar-logo > p{
+  font-size: medium;
+}
+
+.all_navbar-menu{
+  display: flex;
+  width: auto;
+  height: 100%;
+}
+.all_navbar-menus{
+  text-align: center;
+  width: 100px;
   
-  
+}
+
+
+
+
+
 .main_intro-head{
   border-width: 2px 0px 2px 0px ;
   border-style: solid; 
