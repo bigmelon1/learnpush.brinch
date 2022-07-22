@@ -10,45 +10,94 @@ body {
 
 
 
+
+
 .all_navbar{
   display: flex;
   height: 100px;
 }
 
 .all_navbar-logo{
-  width: 150px;
+  width: 250px;
   height: 100%;
   border-width: 0px 1px 0px 0px;
   border-style: solid;
   text-align: center;
 }
-.all_navbar-logo > p{
-  font-size: medium;
+.all_navbar-logo p{
+  margin: 0;
+  font-size: 40px; 
+  font-weight: bold;
 }
 
 .all_navbar-menu{
+  margin: 0;
   display: flex;
   width: auto;
   height: 100%;
+  list-style: none;
 }
 .all_navbar-menus{
   text-align: center;
   width: 100px;
-  
 }
+.all_navbar-menus a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.all_navdrop{
+  display: flex;
+  margin: 0;
+  padding-left: 250px;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  overflow: hidden;
+  float: left;
+}
+.all_navbar:hover + .all_navdrop{
+  height: auto;
+  opacity: 1;
+  transition : all 0.08s;
+
+}
+.all_navdrop:hover{
+  height: auto;
+  opacity: 1;
+  transition : all 0.08s;
+
+}
+.all_navdrop ul{
+  margin: 0;
+  width: auto;
+  height: 100%;
+  list-style: none;
+  text-align: center;
+}
+.all_navdrop-li{
+  width: 100px;
+  height: 50px;
+}
+.all_navdrop-topli{
+  margin-top: 20px;
+}
+
+
+
 
 
 
 
 
 .main_intro-head{
-  border-width: 2px 0px 2px 0px ;
-  border-style: solid; 
-  text-align: center; 
-  padding-top: 20px; 
+  border-width: 2px 0px 2px 0px;
+  border-style: solid;
+  text-align: center;
+  padding-top: 20px;
   padding-bottom: 20px;
-  display: flex;
-  display: flex
+
 }
 .main_intro-head p{
   font-size: 40px; 
