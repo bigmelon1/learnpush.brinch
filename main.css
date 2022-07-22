@@ -10,7 +10,12 @@ body {
 
 
 
-
+.all_navbardrop-container{
+  width: 100%;
+  height: 100px;
+  background-color: wheat;
+  /* position: relative; */
+}
 
 .all_navbar{
   display: flex;
@@ -47,6 +52,8 @@ body {
 }
 
 
+
+
 .all_navdrop{
   display: flex;
   margin: 0;
@@ -56,25 +63,27 @@ body {
   background-color: gray;
   overflow: hidden;
   float: left;
+  /* position: absolute; */
 }
-.all_navbar:hover + .all_navdrop{
+
+.all_navbar:hover ~ .all_navdrop{
   height: auto;
   opacity: 1;
   transition : all 0.08s;
-
 }
 .all_navdrop:hover{
   height: auto;
   opacity: 1;
   transition : all 0.08s;
-
 }
+
 .all_navdrop ul{
   margin: 0;
   width: auto;
   height: 100%;
   list-style: none;
   text-align: center;
+  float: left;
 }
 .all_navdrop-li{
   width: 100px;
@@ -82,8 +91,8 @@ body {
 }
 .all_navdrop-topli{
   margin-top: 20px;
-}
 
+}
 
 
 
@@ -97,7 +106,7 @@ body {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-
+  float: none;
 }
 .main_intro-head p{
   font-size: 40px; 
