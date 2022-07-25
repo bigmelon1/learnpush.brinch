@@ -1,7 +1,12 @@
 :root {
-    --linkbox_fontsize: 20px;
-    --linkbox-button_fontsize: 10px;
-  }
+  --verybigfont: 45px;
+  --linkbox_fontsize: 30px;
+  --linkbox_button_fontsize: 20px;
+
+  --colorB: black;
+  --colorW: white;
+  --colorG: rgb(131, 220, 131);
+}
   
 body {
   margin: 0;
@@ -13,7 +18,7 @@ body {
 .all_navbardrop-container{
   width: 100%;
   height: 100px;
-  background-color: wheat;
+  background-color: var(--colorG);
 }
 
 .all_navbar{
@@ -24,15 +29,15 @@ body {
 .all_navbar-logo{
   width: 250px;
   height: 100%;
-  border-width: 0px 1px 0px 0px;
-  border-style: solid;
+  padding-top: 15px;
   text-align: center;
 }
 .all_navbar-logo a{
   margin: 0;
-  font-size: 40px; 
+  font-size: var(--verybigfont); 
   font-weight: bold;
   text-decoration: none;
+  color: var(--colorW);
 }
 
 .all_navbar-menu{
@@ -44,15 +49,31 @@ body {
 }
 .all_navbar-menus{
   text-align: center;
-  width: 200px;
-  padding-top: 25px;
+  width: 250px;
+
 }
-.all_navbar-menus a{
+.all_navbar-menus p{
   text-decoration: none;
-  color: black;
-  font-size: 35px;
+  color: var(--colorW);
+  font-size: var(--verybigfont);
   font-weight: bold;
+  margin-top: 20px;
 }
+.linebox{
+  margin-left: 250px;
+  margin-top: 25px;
+}
+.line {
+  background: var(--colorW);
+  margin-top:6px;
+  margin-bottom:6px;
+  width:56px;
+  height:7px; 
+  border-radius:2px;
+  box-shadow:0 1px 3px rgba(0,0,0,.5);
+  position:relative;
+}
+
 
 
 
@@ -61,49 +82,58 @@ body {
 
 .all_navdrop{
   display: flex;
-  margin: 0;
   padding-left: 290px; /*250 로고div값에 40 menu값 */
-  width: 90%;
-  max-width: 1000px;
-  height: 2px;
-  background-color: gray;
+  margin-top: px;
+  width: 100%;
+  /* max-width: 1000px; */
+  height: 0px;
+  background-color: rgb(150, 238, 150);
   overflow: hidden;
   float: left;
   position: absolute;
+  border: 2px bold var(--colorB);
+  clear: both;
 }
 
 .all_navbar:hover ~ .all_navdrop{
-  height: auto;
+  height: 150px;
   opacity: 1;
   transition : all 0.08s;
 }
 .all_navdrop:hover{
-  height: auto;
+  height: 150px;
   opacity: 1;
   transition : all 0.08s;
 }
 
-.all_navdrop ul{
+.all_navdrop-phone{
+  display: none;
+}
+.all_navdrop-ul{
   margin: 0;
   padding-left: 0px;
-  width: 200px;
+  width: 250px;
   height: 100%;
   list-style: none;
   text-align: center;
   float: left;
 }
 .all_navdrop-li{
-  width: 100px;
+  width: 250px;
   height: 50px;
   list-style: none;
   display: inline-block;
-  
+  font-size: var(--linkbox_fontsize);
 }
 .all_navdrop-topli{
   margin-top: 20px;
-
+  margin-bottom: 10px;
 }
-
+.all_navdrop-li a{
+  text-decoration: none;
+  color: var(--colorW);
+  font-weight: bold;
+}
 
 
 
@@ -143,4 +173,99 @@ body {
 .main_linkbox p{
   font-size: var(--linkbox_fontsize)
    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .all_navbar-menu{
+    display: none;
+  }
+
+  .all_navdrop{
+    display: none; /* 임시*/
+    width: 100vw;
+    height: 0px;
+    padding: 0px;
+    display: flex;
+    overflow: hidden;
+  }
+  .all_navbar:hover ~ .all_navdrop{
+    height: 350px;
+    opacity: 1;
+    transition : all 0.08s;
+  }
+  .all_navdrop:hover{
+    height: 350px;
+    opacity: 1;
+    transition : all 0.08s;
+  }
+
+
+  .all_navdrop-phone{
+    display: block;
+    width: 100px;
+    height: 100%;
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .all_navdrop-phone li{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+  }
+  .all_navdrop-phone li p{
+    margin: 0px;
+    font-size: var(--linkbox_fontsize);
+    font-weight: bold;
+    color: var(--colorW);
+  }
+
+  .all_navdrop-ul{
+    display: block;
+    font-size: var(--linkbox_button_fontsize);
+    height: auto;
+  }
+  .all_navdrop-topli{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .all_navdrop-topli-phoneM{
+    margin-top: 20px;
+  }
+  .all_navdrop-topli-phoneM2{
+    margin-top: 50px;
+  }
+  .linebox{
+    display: block;
+  }
 }

@@ -5,33 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page Not Found</title>
     <link rel="stylesheet" href="main.css">
-
+    <link rel="stylesheet" href="main.js">
+    
   </head>
 <body>
   
   <div class="all_navbardrop-container">
     <nav class="all_navbar">
-      <div class="all_navbar-logo"><a href="#">logo</a></div>
-      <ul class="all_navbar-menu">
-        <li class="all_navbar-menus"><a href="#">소개</a></li>
-        <li class="all_navbar-menus"><a href="#">작품</a></li>
-        <li class="all_navbar-menus"><a href="#">지원</a></li>
+      <div class="all_navbar-logo" id="ha"><a href="main.html">minimelon</a></div>
+      <ul class="all_navbar-menu" id="navbar-menu">
+        <li class="all_navbar-menus"><p>소개</p></li>
+        <li class="all_navbar-menus"><p>작품</p></li>
+        <li class="all_navbar-menus"><p>지원</p></li>
       </ul>
+      <div class="linebox" onclick="navbaronoff()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </nav>
 
     
     <nav class="all_navdrop">
-      <ul>
-        <li class="all_navdrop-li all_navdrop-topli">mi</li>
-        <li class="all_navdrop-li">s</li>
+      <ul class="all_navdrop-phone">
+        <li style="margin-bottom: 40px;"><p>소개</p></li>
+        <li style="margin-bottom: 40px;"><p>작품</p></li>
+        <li><p>지원</p></li>
       </ul>
-      <ul>
-        <li class="all_navdrop-li all_navdrop-topli">j</li>
-      </ul>
-      <ul>
-        <li class="all_navdrop-li all_navdrop-topli">h</li>
-        <li class="all_navdrop-li">Q</li>
-      </ul>
+      <div>
+        <ul class="all_navdrop-ul">
+          <li class="all_navdrop-li all_navdrop-topli all_navdrop-topli-phoneM"><a href="#">minimelon</a></li>
+          <li class="all_navdrop-li"><a href="#">지원</a></li>
+        </ul>
+        <ul class="all_navdrop-ul">
+          <li class="all_navdrop-li all_navdrop-topli"><a href="#">작품</a></li>
+        </ul>
+        <ul class="all_navdrop-ul">
+          <li class="all_navdrop-li all_navdrop-topli all_navdrop-topli-phoneM2" ><a href="#">도움</a></li>
+          <li class="all_navdrop-li "><a href="#">질문</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
 
@@ -48,34 +61,7 @@
     </button>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</html>
-
+  <script src="main.js"></script>
 
 
 
@@ -86,6 +72,17 @@
 
 
 </body>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
