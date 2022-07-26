@@ -143,8 +143,10 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   float: none;
+  display: flex;
+  justify-content: center;
 }
-.main_intro-head{
+.main_intro-head div{
   width: auto;
 }
 .main_intro-head div h1{
@@ -200,7 +202,7 @@ body {
 
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
 
   .all_navbar-menu{
     display: none;
@@ -285,7 +287,14 @@ body {
     position:relative;
   }
 
-  .main_intro-head{
-    width: 90%;
+  .main_intro-head div{
+    width: 70%;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .main_intro-head div{
+    width: 80%;
+  }
+}
+
