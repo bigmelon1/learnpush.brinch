@@ -1,5 +1,6 @@
 :root {
-  --verybigfont: 45px;
+  --verybigfont: 50px;
+  --bigfont: 40px;
   --linkbox_fontsize: 30px;
   --linkbox_button_fontsize: 20px;
 
@@ -10,13 +11,16 @@
   
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 
 
 
 .all_navbardrop-container{
-  width: 100vw;
+  width: 100%;
   height: 100px;
   background-color: var(--colorG);
 }
@@ -44,14 +48,13 @@ body {
 .all_navbar-menu{
   margin: 0;
   display: flex;
-  width: auto;
   height: 100%;
   list-style: none;
 }
 .all_navbar-menus{
   text-align: center;
   width: 250px;
-
+  height: 100%;
 }
 .all_navbar-menus p{
   text-decoration: none;
@@ -155,28 +158,48 @@ body {
 
 
 
-
+.main_linkbox-container{
+  width: 100vw;
+  height: auto;
+  background-color: var(--colorW);
+  display: flex;
+  justify-content: center;
+}
 .main_linkbox {
-  width: 400px;
+  width: 90vw;
   height: 300px;
-  background-color: white;
-  border-radius: 10%;
-  border: 1px solid black;
+  margin-top: 70px;
+  background-color: var(--colorG);
+  border-radius: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: bold; 
 }
-.main_linkbox button{
-    width: 100px;
-    height: 60px;
+.garidugi{
+  width: 100%;
+  height: 15%;
 }
-.main_linkbox p{
-  font-size: var(--linkbox_fontsize)
-   
+.main_linkbox > p{
+  font-size: var(--verybigfont)
 }
-
-
-
+.main_linkbox-button{
+  width: 50%;
+  max-width: 300px;
+  height: 70px;
+  padding-top: 5px;
+  border-radius: 100px;
+  border-width: 0px;
+  text-align: center;
+  color:white;
+  background-color: var(--colorW);
+}
+.main_linkbox-button p{
+  font-size: var(--linkbox_fontsize);
+  color: var(--colorB);
+  font-weight: bold;
+  margin: 0px;
+}
 
 
 
