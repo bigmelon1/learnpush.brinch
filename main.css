@@ -271,7 +271,7 @@ button:hover{
 }
 .main_smlinkboxes-linkbox{
   width: 40vw;
-  height: 500px;
+  height: 450px;
   border-radius: 100px;
   background-color: var(--colorG);
   display: flex;
@@ -293,6 +293,10 @@ button:hover{
   border-radius: 70px;
   border-width: 0px;
   background-color: var(--colorW);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .main_smlinkboxes-button > p{
   font-size: var(--linkbox_fontsize);
