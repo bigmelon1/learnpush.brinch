@@ -188,13 +188,14 @@ button:hover{
   font-weight: bold;
 }
 .main_intro-head-showdiv button{
+  width: 15%;
   margin-top: 10px;
   border-radius: 70px;
   border-width: 0px;
   background-color: var(--colorG);
 }
 .main_intro-head-showdiv button p{
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
 }
 .main_intro-head-showdiv button:hover{
@@ -257,7 +258,6 @@ button:hover{
 
 .main_smlinkboxes-container{
   width: 100vw;
-  margin-top: 30px;
   height: auto;
   display: flex;
 }
@@ -289,12 +289,13 @@ button:hover{
   width: 50%;
   height: 20%;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   border-radius: 70px;
   border-width: 0px;
   background-color: var(--colorW);
   display: flex;
   flex-direction: column;
+  align-content: center;
   justify-content: center;
   align-items: center;
 }
