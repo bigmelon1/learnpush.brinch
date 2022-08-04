@@ -29,6 +29,7 @@ body {
   display: flex;
   width: 100%;
   height: 100px;
+  justify-content: center;
 }
 
 .all_navbar-logo{
@@ -87,6 +88,7 @@ body {
   position: absolute;
   border: 2px bold var(--colorB);
   clear: both;
+  justify-content: center;
 }
 
 .all_navbar:hover ~ .all_navdrop{
