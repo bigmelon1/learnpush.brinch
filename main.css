@@ -16,7 +16,9 @@ body {
   flex-direction: column;
   align-content: center;
 }
-
+button:hover{
+  cursor:pointer
+}
 
 
 
@@ -149,6 +151,7 @@ body {
   padding-bottom: 20px;
   float: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .main_intro-head div{
@@ -157,6 +160,45 @@ body {
 .main_intro-head div h1{
   font-size: 60px; 
   margin: 0;
+}
+.main_intro-head-showdiv{
+  width: 100vw;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+.main_intro-head:hover{
+  height: auto;
+  opacity: 1;
+  transition : all 0.3s;
+}
+.main_intro-head:hover .main_intro-head-showdiv{
+  height: 80px;
+  opacity: 1;
+  transition : all 0.3s;
+}
+.main_intro-head-showdiv > div{
+  height: 80px;
+}
+.main_intro-head-showdiv-p{
+  font-size: var(--linkbox_fontsize);
+  font-weight: bold;
+}
+.main_intro-head-showdiv button{
+  margin-top: 10px;
+  border-radius: 70px;
+  border-width: 0px;
+  background-color: var(--colorG);
+}
+.main_intro-head-showdiv button p{
+  font-size: 15px;
+  font-weight: bold;
+}
+.main_intro-head-showdiv button:hover{
+  cursor: pointer;
 }
 
 
@@ -202,17 +244,61 @@ body {
   padding-left: 5px;
   padding-right: 5px;
 }
-
 .main_linkbox-button:hover{
   cursor:pointer
 }
-
 .main_linkbox-button p{
   font-size: var(--linkbox_fontsize);
   color: var(--colorB);
   font-weight: bold;
   margin: 0px;
+}
 
+
+.main_smlinkboxes-container{
+  width: 100vw;
+  margin-top: 30px;
+  height: auto;
+  display: flex;
+}
+.main_smlinkboxes-smcontainer{
+  width: 49vw;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_smlinkboxes-linkbox{
+  width: 40vw;
+  height: 500px;
+  border-radius: 100px;
+  background-color: var(--colorG);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.main_smlinkboxes-linkbox > p{
+  margin-top: 70px;
+  font-size: var(--bigfont);
+  font-weight: bold;
+}
+.main_smlinkboxes-button{
+  width: 50%;
+  height: 20%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 70px;
+  border-width: 0px;
+  background-color: var(--colorW);
+}
+.main_smlinkboxes-button > p{
+  font-size: var(--linkbox_fontsize);
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 
