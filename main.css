@@ -16,6 +16,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 button:hover{
   cursor:pointer
@@ -164,6 +165,7 @@ button:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .main_intro-head div{
   width: auto;
@@ -187,6 +189,7 @@ button:hover{
   transition : all 0.3s;
 }
 .main_intro-head:hover .main_intro-head-showdiv{
+  width: 100vw;
   height: 80px;
   opacity: 1;
   transition : all 0.3s;
@@ -198,7 +201,7 @@ button:hover{
   font-size: var(--linkbox_fontsize);
   font-weight: bold;
 }
-.main_intro-head-showdiv button{
+.main_intro-head-showdiv > button{
   width: 15%;
   margin-top: 10px;
   border-radius: 70px;
@@ -218,6 +221,7 @@ button:hover{
 .main_linkbox-container{
   width: 100vw;
   height: auto;
+  min-height: 600px;
   background-color: var(--colorW);
   display: flex;
   justify-content: center;
@@ -270,7 +274,11 @@ button:hover{
 .main_smlinkboxes-container{
   width: 100vw;
   height: auto;
+  min-height: 500px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .main_smlinkboxes-smcontainer{
   width: 49vw;
@@ -512,7 +520,44 @@ button:hover{
   .main_intro-head div{
     width: 70%;
   }
+  .main_intro-head-showdiv > button{
+    width: 20%;
+  }
+  .main_intro-head-showdiv > button > p{
+    font-size: var(--veryminfont);
+  }
+
+  .all_footer-logodiv > a{
+    font-size: var(--linkbox_button_fontsize);
+  }
+  .all_footer-everycontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .all_footer-menucontainer{
+    height: 50%;
+  }
+  .all_footer-기타ul{
+    padding: 0px;
+  }
+
+  
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 425px) {
   .main_intro-head div{
