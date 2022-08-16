@@ -1,0 +1,44 @@
+img{
+  width: 30vw;
+  height: 20vw;
+  border-radius: 50px;
+  border: 3px bold var(--colorB);
+}
+
+
+.inform_mm_inform-container{
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+}
+.inform_mm_inform-pcontainer{
+  width: 40%;
+  height: auto;
+}
+.inform_mm_button{
+  width:100px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: var(--colorG);
+  border-width: 2px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+
+.inform_work-center-container{
+  width: 100vw;
+  height: auto;
+}
+.inform_work-works-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  list-style: none;
+}
+.inform_work-works-container > li{
+  border-width: 3px;
+}
