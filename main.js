@@ -16,3 +16,4 @@ function navbaronoff(){
         네브바열림 = 0;
     }
 }
+

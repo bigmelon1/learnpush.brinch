@@ -432,6 +432,10 @@ button:hover{
 
 @media screen and (max-width: 500px) {
 
+  body{
+    overflow-x: scroll;
+  }
+
   .all_navbar-menu{
     display: none;
   }

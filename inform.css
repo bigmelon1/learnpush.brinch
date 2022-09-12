@@ -26,6 +26,7 @@ img{
   font-weight: bold;
 }
 
+
 .inform_work-center-title{
   width: 100vw;
   height: fit-content;
@@ -46,9 +47,11 @@ img{
   margin-left: 60px;
 }
 
+
 .inform_work-center-container{
   width: 100vw;
   height: auto;
+
 }
 .inform_work-works-container{
   width: 100%;
